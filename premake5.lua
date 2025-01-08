@@ -1,8 +1,9 @@
 workspace "Hazel"
         configurations { "Debug", "Release" }
+        platforms { "win64" }
 
 project "Hazel"
-        kind "ConsoleApp"
+        kind "SharedLib"
         language "C++"
         targetdir "bin/%{cfg.buildcfg}"
 
